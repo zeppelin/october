@@ -1,7 +1,13 @@
 var AuthenticatedRoute = Ember.Route.extend({
   beforeModel: function(transition) {
-    if (!this.controllerFor('application').get('token')) {
+    var token = localStorage.token;
+
+    if (!token) {
       window.location = 'http://localhost:3000/session/new';
+    } else {
+      $.ajaxSetup({
+        data: { 'token': token }
+      });
     }
   }
 });

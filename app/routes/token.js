@@ -1,9 +1,13 @@
 var TokenRoute = Ember.Route.extend({
   model: function(params) {
-    if (params.token) {
-      this.controllerFor('application').set('token', params.token);
-      this.transitionTo('repo');
-    }
+    var token = params.token;
+
+    localStorage.token = token;
+    $.ajaxSetup({
+      data: { 'token': token }
+    });
+
+    this.transitionTo('repo');
   }
 });
 
