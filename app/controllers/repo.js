@@ -1,5 +1,5 @@
-var RepoController = Ember.Controller.extend({
-  content: new Array(5)
+var RepoController = Ember.ArrayController.extend({
+
 });
 
 export default RepoController;
