@@ -7,12 +7,14 @@ var TimerController = Ember.Controller.extend({
     var self = this;
 
     var intervalId = setInterval(function() {
-      if (self.get('timeRemaining') === 0) {
+      var timeRemaining = self.get('timeRemaining');
+
+      if (timeRemaining-1 === 0) {
         clearInterval(intervalId);
         self.set('isDone', true);
-      } else {
-        self.decrementProperty('timeRemaining');
       }
+
+      self.decrementProperty('timeRemaining');
     }, 1000);
 
   }
