@@ -17,7 +17,7 @@
           </td>
         </tr>
 
-        {{#each model}}
+        {{#each item in model}}
           <tr>
             <td class="issue-id">#270</td>
             <td class="issue-name">
@@ -30,10 +30,11 @@
               {{!-- <span class="badge">3</span> --}}
             </td>
             <td class="actions">
-              <button {{action "startPomodoro" target="controllers.timer"}} class="btn btn-default">Start</button>
+              <button {{action "startPomodoro" item target="controllers.timer"}} class="btn btn-default">Start</button>
             </td>
           </tr>
         {{/each}}
+        <button {{action "startPomodoro" target="controllers.timer"}} class="btn btn-default">Start</button>
       </tbody>
     </table>
   </div>

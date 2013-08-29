@@ -11,8 +11,7 @@ var TimerController = Ember.Controller.extend({
     }, 5000);*/
   },
 
-  startPomodoro: function() {
-    console.log('lorem');
+  startPomodoro: function(item) {
     Ember.run.later(function() {
       var countDown = this.get('remaining') - 1;
       this.set('remaining', countDown);
