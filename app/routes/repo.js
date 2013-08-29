@@ -1,4 +1,4 @@
-import AuthenticatedRoute from 'october/routes/token';
+import AuthenticatedRoute from 'october/routes/authenticated';
 
 var RepoRoute = AuthenticatedRoute.extend({
   model: function(params) {
