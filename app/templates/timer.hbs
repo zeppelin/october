@@ -3,7 +3,7 @@
     <div class="jumbotron timer">
       <div {{bindAttr class="isDone:done :icon :glyphicon :glyphicon-time"}}></div>
       <h1 {{bindAttr class="isDone:done"}}>{{format-remaining timeRemaining}}</h1>
-      <p>Working on <strong>rails/turbolinks #{{id}}</strong></p>
+      <p>Working on <strong>{{owner}}/{{repo}} #{{id}}</strong></p>
       <p><small><em>{{title}}</em></small></p>
 
       <div class="form-actions">
