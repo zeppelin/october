@@ -17,7 +17,7 @@
           </td>
         </tr>
 
-        {{#each item in model}}
+        {{#each model}}
           <tr>
             <td class="issue-id">#270</td>
             <td class="issue-name">
@@ -30,7 +30,9 @@
               {{!-- <span class="badge">3</span> --}}
             </td>
             <td class="actions">
-              <button {{action "startPomodoro" item target="controllers.timer"}} class="btn btn-default">Start</button>
+              {{#linkTo "timer" this class="btn btn-default"}}
+                Start
+              {{/linkTo}}
             </td>
           </tr>
         {{/each}}

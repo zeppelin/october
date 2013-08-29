@@ -1,18 +1,9 @@
 var TimerController = Ember.Controller.extend({
   isDone: false,
-  remaining: 25000,
-
-  init: function() {
-    this._super();
-    var self = this;
-
-    /*Ember.run.later(function() {
-      self.set('isDone', true);
-    }, 5000);*/
-  },
+  remaining: 2,
 
   startPomodoro: function(item) {
-    Ember.run.later(function() {
+    Ember.run.later(this, function() {
       var countDown = this.get('remaining') - 1;
       this.set('remaining', countDown);
       this.startPomodoro(this);
