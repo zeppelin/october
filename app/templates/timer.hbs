@@ -7,7 +7,11 @@
       <p><small><em>Duplicating HTML class attribute content</em></small></p>
 
       <div class="form-actions">
-        {{#linkTo "repo" class="btn btn-default btn-lg"}}Cancel{{/linkTo}}
+        {{#if isDone}}
+          {{#linkTo "repo" class="btn btn-success btn-lg"}}Cool story breaux!{{/linkTo}}
+        {{else}}
+          {{#linkTo "repo" class="btn btn-danger btn-lg"}}Cancel{{/linkTo}}
+        {{/if}}
       </div>
     </div>
   </div>
