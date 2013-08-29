@@ -1,6 +1,6 @@
 function Routes() {
   this.resource('repo', {path: '/'});
-  this.resource('timer');
+  this.resource('timer', {path: '/:pomodoro_id'});
 }
 
 export default Routes;

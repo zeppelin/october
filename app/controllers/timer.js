@@ -1,6 +1,6 @@
-var TimerController = Ember.Controller.extend({
+var TimerController = Ember.ObjectController.extend({
   isDone: false,
-  timeRemaining: 45*60,
+  timeRemaining: 25*60,
 
   init: function() {
     this._super();
@@ -17,7 +17,11 @@ var TimerController = Ember.Controller.extend({
       self.decrementProperty('timeRemaining');
     }, 1000);
 
-  }
+  },
+
+  isDoneDidChange: function() {
+    // AJAX like crazy: complete pomodoro on backend
+  }.observes('isDone')
 });
 
 export default TimerController;
