@@ -1,14 +1,9 @@
 <nav class="navbar navbar-default" role="navigation">
   <div class="container">
-    <div class="navbar-header">
-      {{#linkTo "index" class="navbar-brand"}}October{{/linkTo}}
-    </div>
+      {{#linkTo "repo" class="navbar-brand"}}October{{/linkTo}}
   </div>
 </nav>
 
 <div class="container">
   {{outlet}}
-
-  {{render "repo"}}
-  {{render "timer"}}
 </div>
