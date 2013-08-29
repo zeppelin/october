@@ -10,6 +10,9 @@ var App = Ember.Application.create({
 import repo from 'october/models/repo';
 App.Repo = repo;
 
+import pomodoro from 'october/models/pomodoro';
+App.Pomodoro = pomodoro;
+
 import routes from 'october/routes';
 App.Router.map(routes); // TODO: just resolve the router
 
