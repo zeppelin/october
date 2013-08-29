@@ -1,6 +1,12 @@
+var issues = [];
 var RepoRoute = Ember.Route.extend({
   model: function(params) {
-    return App.Repo.find();
+    $.getJSON('/issues?owner=emberjs&repo=ember.js', function(result) {
+      result.issues.forEach(function(item) {
+        issues.pushObject(item);
+      });
+    });
+    return issues;
   }
 });
 
