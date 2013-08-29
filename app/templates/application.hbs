@@ -1,3 +1,13 @@
-<h2>Welcome to Ember.js</h2>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      {{#linkTo "index" class="navbar-brand"}}October{{/linkTo}}
+    </div>
+  </div>
+</nav>
 
-{{outlet}}
+<div class="container">
+  {{outlet}}
+
+  {{render "timer"}}
+</div>

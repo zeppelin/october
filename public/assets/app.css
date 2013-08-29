@@ -1,0 +1,32 @@
+.timer { padding-top: 20px; }
+.timer > * { text-align: center; }
+.timer .icon { margin: 0 auto 20px; font-size: 80px; display: block; color: #aaa; }
+.timer .form-actions { margin-top: 15px; padding-top: 15px; border-top: 1px solid #bbb; }
+
+.timer .icon, .timer h1 {
+  transition: color 1s;
+}
+
+.timer h1.done {
+  color: #a20 !important;
+}
+
+.timer .icon.done {
+  color: #a20 !important;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 0.15s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(-15deg);
+  }
+  50% {
+    -webkit-transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(-15deg);
+  }
+}
