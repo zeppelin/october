@@ -5,7 +5,7 @@
 // anyway. In CoffeeScript files, you need to escape out for
 // some ES6 features like import and export. For example:
 //
-// `import 'appkit/models/user' as User`
+// `import 'october/models/user' as User`
 //
 // Posts = Em.Object.extend
 //   init: (userId) ->

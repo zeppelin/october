@@ -1,6 +1,6 @@
 {
-  "name": "app-kit",
-  "namespace": "appkit",
+  "name": "october",
+  "namespace": "october",
   "version": "0.0.0",
   "main": "index.js",
   "directories": {

@@ -1,5 +1,5 @@
-import Index from 'appkit/routes/index';
-import App from 'appkit/app';
+import Index from 'october/routes/index';
+import App from 'october/app';
 
 module("Acceptances - Index", {
   setup: function(){
