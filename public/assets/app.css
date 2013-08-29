@@ -1,6 +1,9 @@
+/* Body */
+body { background: url(/images/tomato-background.png) fixed repeat-x bottom; }
+
 /* Timer */
 
-.timer { padding-top: 20px; }
+.timer { padding-top: 20px; background: rgba(230,230,230, 0.9);}
 .timer > * { text-align: center; }
 .timer .icon { margin: 0 auto 20px; font-size: 80px; display: block; color: #aaa; }
 .timer .form-actions { margin-top: 15px; padding-top: 15px; border-top: 1px solid #bbb; }
@@ -34,6 +37,7 @@
 }
 
 /* Repo */
+.repo-fragment table { background-color: rgba(255, 255, 255, 0.9); }
 .new-issue { width: 80px; }
 td { vertical-align: middle !important; }
 td.issue-id { color: #666; }
