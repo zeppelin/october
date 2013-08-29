@@ -22,9 +22,7 @@
             <td class="issue-id">#270</td>
             <td class="issue-name">{{title}}</td>
             <td class="tomato-field">
-              <img src="/images/tomato-icon.png" width="20" height="20">
-              <img src="/images/tomato-icon.png" width="20" height="20">
-              <img src="/images/tomato-icon.png" width="20" height="20">
+              {{pomodoro-count value=pomodoro_count}}
             </td>
             <td class="actions">
               {{#linkTo "timer" class="btn btn-default"}}Start{{/linkTo}}
