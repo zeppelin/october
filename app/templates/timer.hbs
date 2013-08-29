@@ -2,7 +2,7 @@
   <div class="col-md-6 col-md-offset-3">
     <div class="jumbotron timer">
       <div {{bindAttr class="isDone:done :icon :glyphicon :glyphicon-time"}}></div>
-      <h1 {{bindAttr class="isDone:done"}}>21:21</h1>
+      <h1 {{bindAttr class="isDone:done"}}>{{remaining}}</h1>
       <p>Working on <strong>rails/turbolinks #270</strong></p>
 
       <div class="form-actions">

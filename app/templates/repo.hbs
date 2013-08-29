@@ -30,7 +30,7 @@
               {{!-- <span class="badge">3</span> --}}
             </td>
             <td class="actions">
-              <button class="btn btn-default">Start</button>
+              <button {{action "startPomodoro" target="controllers.timer"}} class="btn btn-default">Start</button>
             </td>
           </tr>
         {{/each}}
