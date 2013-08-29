@@ -13,7 +13,7 @@
             <em>New Issue</em>
           </td>
           <td class="text-right">
-            <button class="btn btn-success">Start</button>
+            <button {{action "newSession"}} class="btn btn-default">Start</button>
           </td>
         </tr>
 
@@ -27,10 +27,9 @@
               <img src="/images/tomato-icon.png" width="20" height="20">
               <img src="/images/tomato-icon.png" width="20" height="20">
               <img src="/images/tomato-icon.png" width="20" height="20">
-              {{!-- <span class="badge">3</span> --}}
             </td>
             <td class="actions">
-              <button class="btn btn-default">Start</button>
+              {{#linkTo "timer" class="btn btn-success"}}Start{{/linkTo}}
             </td>
           </tr>
         {{/each}}

@@ -1,8 +1,6 @@
 function Routes() {
-  // // routes/resources
-  // this.resource('posts', function() {
-  //   this.route('new');
-  // });
+  this.resource('repo', {path: '/'});
+  this.resource('timer');
 }
 
 export default Routes;
