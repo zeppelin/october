@@ -10,4 +10,7 @@ var App = Ember.Application.create({
 import routes from 'october/routes';
 App.Router.map(routes); // TODO: just resolve the router
 
+// Scumbag helpers
+import formatRemaining from 'october/helpers/format_remaining';
+
 export default App;

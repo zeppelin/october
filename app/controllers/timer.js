@@ -1,6 +1,6 @@
 var TimerController = Ember.Controller.extend({
   isDone: false,
-  timeRemaining: 5,
+  timeRemaining: 45*60,
 
   init: function() {
     this._super();
