@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <table class="table table-striped">
+      <thead>
+        <tr><th colspan="4"><h2>rails/turbolinks</h2></th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="new-issue">
+            {{input type="text" class="form-control"}}
+          </td>
+          <td colspan="2">
+            <em>New Issue</em>
+          </td>
+          <td class="text-right">
+            <button class="btn btn-success">Start</button>
+          </td>
+        </tr>
+
+        {{#each model}}
+          <tr>
+            <td class="issue-id">#270</td>
+            <td class="issue-name">
+              Duplicating HTML class attribute content
+            </td>
+            <td class="tomato-field">
+              <img src="/images/tomato-icon.png" width="20" height="20">
+              <img src="/images/tomato-icon.png" width="20" height="20">
+              <img src="/images/tomato-icon.png" width="20" height="20">
+              {{!-- <span class="badge">3</span> --}}
+            </td>
+            <td class="actions">
+              <button class="btn btn-default">Start</button>
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
