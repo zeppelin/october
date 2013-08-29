@@ -13,6 +13,7 @@ module.exports = function(config) {
       'vendor/jquery/jquery.js',
       'vendor/handlebars/handlebars.js',
       'vendor/ember/index.js',
+      'vendor/ember-model/ember-model.js',
       'assets/templates.js',
       'assets/app.js',
       'tests/test_helper.js',
