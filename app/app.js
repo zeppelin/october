@@ -19,4 +19,10 @@ App.Router.map(routes); // TODO: just resolve the router
 // Scumbag helpers
 import formatRemaining from 'october/helpers/format_remaining';
 
+//FIXME: Fix this abomination
+App.owner = 'emberjs';
+App.repo  = 'ember.js';
+App.userId = '1';
+App.githubIssueId = '3246';
+
 export default App;
