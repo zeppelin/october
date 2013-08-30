@@ -1,7 +1,7 @@
 /* Body */
 body { background: url(/images/tomato-background.png) fixed repeat-x bottom; }
 .navbar-header { float: none; text-align: center; }
-.navbar-brand { margin: 0 auto; float: none; display: inline-block; }
+.navbar-brand { float: none; display: inline-block; }
 
 /* Timer */
 
